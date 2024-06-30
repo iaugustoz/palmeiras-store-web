@@ -16,7 +16,9 @@ Projeto em andamento.
 
 ### Tecnologias
 
--
+- React.js (v18.3.1);
+- TypeScript (v5.5.2);
+- Tailwind CSS (v3.4.4).
 
 ### Dependências
 
