@@ -6,7 +6,11 @@
 
 ## Descrição
 
-Descrição em andamento.
+A ideia deste projeto surgiu da minha paixão pelo meu time de coração. Trata-se de um website fiel às tradições palestrinas e que simboliza o palestrino.
+
+A aplicação foi desenvolvida em React, TypeScript... no Front-End e no Back-End...
+
+Descrição em construção.
 
 ## Status do projeto
 
