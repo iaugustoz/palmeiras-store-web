@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .image {
+    max-height: 800px;
+    max-width: 100%;
+    background-image: url('./assets/banner-palmeiras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

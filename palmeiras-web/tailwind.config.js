@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'palmeiras-green': '#024f28',
-        'palmeiras-green-light': '#016837',
+        'palmeiras-green': '#014510',
         'palmeiras-white': '#FFF',
       },
     },

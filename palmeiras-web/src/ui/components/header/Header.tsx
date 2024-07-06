@@ -1,43 +1,25 @@
-import { User, Search, ShoppingCart, Heart } from 'lucide-react';
+import { User, ShoppingCart } from 'lucide-react';
+import logo from '../../../assets/logo-palmeiras.png'
 
 const Header = () => {
   return (
     <>
       <div className="mx-auto max-w-[80%]">
-        <header className="flex justify-between items-center bg-[#03eb99] my-4 p-[18px] rounded">
+        <header className="flex justify-between items-center bg-white my-4 p-[18px]">
           <div>
-            <button>Logo</button>
+            <img src={logo} className="w-16" alt="Logotipo" />
           </div>
 
-          <nav className="flex gap-x-4">
-            <a href="novidades" className="hover:underline">
-              Novidades
-            </a>
-            <a href="licenciados" className="hover:underline">
-              Licenciados
-            </a>
-            <a href="colecoes" className="hover:underline">
-              Coleções
-            </a>
-            <a href="promocoes" className="hover:underline">
-              Promoções
-            </a>
-            <a href="para-socios" className="hover:underline">
-              Para Sócios
-            </a>
-            <a href="contato" className="hover:underline">
-              Contato
-            </a>
-          </nav>
+          <input
+            type="text"
+            placeholder="Procurar"
+            className="px-4 py-2 w-1/3 rounded-lg bg-[#edeff2] focus:outline-green-700"
+          />
 
           <div className="flex gap-x-2">
-            <Heart color="#000" size={20} className="cursor-pointer" />
+            <ShoppingCart color="#000" size={24} className="cursor-pointer" />
 
-            <Search color="#000" size={20} className="cursor-pointer" />
-
-            <ShoppingCart color="#000" size={20} className="cursor-pointer" />
-
-            <User color="#000" size={20} className="cursor-pointer" />
+            <User color="#000" size={24} className="cursor-pointer" />
           </div>
         </header>
       </div>
