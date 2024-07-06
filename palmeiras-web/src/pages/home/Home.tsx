@@ -1,5 +1,5 @@
-import Header from '../ui/components/header/Header';
-import Main from '../ui/components/main/Main'
+import Header from '../../components/layout/Header';
+import Main from '../main/Main';
 
 const Home = () => {
   return (
