@@ -26,7 +26,7 @@ Projeto em andamento.
 
 ### Dependências
 
--
+- [Icons lucide-react](https://lucide.dev/icons/)
 
 ## Instalando
 
