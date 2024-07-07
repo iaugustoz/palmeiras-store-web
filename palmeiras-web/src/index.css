@@ -77,11 +77,20 @@
 
 @layer components {
   .image {
-    max-height: 800px;
-    max-width: 100%;
     background-image: url('./assets/images/banner-palmeiras.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .image-mobile {
+    background-image: url('./assets/images/banner-palmeiras-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
   }
 }

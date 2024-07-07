@@ -9,19 +9,15 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <img src={logo} className="w-16 sm:w-[74px]" alt="Logotipo" />
           <div className="h-[70px] border-solid border-gray-400 border-[1px]" />
-          <p className="font-semibold text-gray-500 sm:text-md leading-4">
-            Official<br />Store
+          <p className="font-semibold text-gray-500 sm:text-md max-w-0 leading-4">
+            Official Store
           </p>
         </div>
 
         <SearchInput className="hidden md:flex w-1/3 mx-4" />
 
         <nav className="flex gap-x-4">
-          <ShoppingCart
-            color="#4b5563"
-            size={24}
-            className="cursor-pointer hover:text-green-600"
-          />
+          <ShoppingCart color="#4b5563" size={24} className="cursor-pointer" />
           <User color="#4b5563" size={24} className="cursor-pointer" />
         </nav>
       </header>
