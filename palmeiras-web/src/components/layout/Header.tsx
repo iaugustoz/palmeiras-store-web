@@ -36,16 +36,19 @@ const Header = () => {
       </div>
 
       {toggle && (
-        <div className="z-10 top-0 right-0 w-full sm:w-[40%] xl:w-1/3 h-full absolute bg-white sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl p-8">
-          <div className="flex justify-between items-center">
-            <h2 className="text-xl font-bold">Seu carrinho | {0} Itens</h2>
-            <span className=""></span>
-            <div onClick={() => setToggle(!toggle)}>
-              <X className="hover:bg-green-200 rounded-full cursor-pointer" />
+        <>
+          <div className="fixed w-full h-full backdrop-blur-lg inset-0"></div>
+          <div className="z-20 top-0 right-0 w-full sm:w-[40%] xl:w-1/3 h-full absolute bg-white sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl p-8">
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-bold">Seu carrinho | {0} Itens</h2>
+              <span className=""></span>
+              <div onClick={() => setToggle(!toggle)}>
+                <X className="hover:bg-green-200 rounded-full cursor-pointer" />
+              </div>
             </div>
+            <div className="mt-2 mb-6 border-[1px] "></div>
           </div>
-          <div className="mt-2 mb-6 border-[1px] "></div>
-        </div>
+        </>
       )}
     </div>
   );
