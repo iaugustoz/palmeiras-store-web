@@ -72,5 +72,6 @@ git push origin minha-contribuicao
 
 - Igor Augusto
 - E-mail: igoraugustobz@gmail.com
+- Me siga no [Instagram](https://www.instagram.com/iaugusto__/)
 - Acesse o meu [Portfólio](https://iaugusto.vercel.app/)
 - Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igorbrz/)
