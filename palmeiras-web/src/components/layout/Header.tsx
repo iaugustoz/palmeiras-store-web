@@ -1,10 +1,29 @@
 import { User, ShoppingCart, X } from 'lucide-react';
 import logo from '../../assets/images/logo-palmeiras.png';
 import SearchInput from '../common/SearchInput';
-import { useState } from 'react';
+import gsap from 'gsap';
+import { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const shoppingCartRef = useRef(null);
+
+  useEffect(() => {
+    if (toggle) {
+      gsap.fromTo(
+        shoppingCartRef.current,
+        { x: '100%' },
+        {
+          duration: 1,
+          x: '0%',
+          ease: 'power1.inOut',
+        }
+      );
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [toggle]);
 
   return (
     <div className="mx-auto max-w-[80%]">
@@ -38,7 +57,10 @@ const Header = () => {
       {toggle && (
         <>
           <div className="fixed w-full h-full backdrop-blur-lg inset-0"></div>
-          <div className="z-20 top-0 right-0 w-full sm:w-[40%] xl:w-1/3 h-full absolute bg-white sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl p-8">
+          <div
+            className="z-20 top-0 right-0 w-full sm:w-[40%] xl:w-1/3 h-full absolute bg-white sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl p-8"
+            ref={shoppingCartRef}
+          >
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-bold">Seu carrinho | {0} Itens</h2>
               <span className=""></span>
