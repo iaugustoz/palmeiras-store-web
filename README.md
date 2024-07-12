@@ -26,7 +26,8 @@ Projeto em andamento.
 
 ### Dependências
 
-- [Icons lucide-react](https://lucide.dev/icons/)
+- [lucide-react](https://lucide.dev/icons/)
+- [GSAP](https://gsap.com/)
 
 ## Instalando
 
@@ -40,6 +41,18 @@ $ git clone https://github.com/igoraugustobrz/palmeiras-store
 
 ```
 $ cd palmeiras-store
+```
+
+3. Instale a library de ícones lucide-react
+
+```
+npm install lucide
+```
+
+4. Instale a library de animações GSAP
+
+```
+$ npm install gsap
 ```
 
 ## Contribuindo
