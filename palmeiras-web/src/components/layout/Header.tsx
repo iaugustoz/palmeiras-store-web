@@ -58,7 +58,7 @@ const Header = () => {
         <>
           <div className="fixed inset-0  backdrop-blur-lg"></div>
           <div
-            className="fixed top-0 right-0 z-20 w-full h-full bg-white p-8 sm:w-[40%] xl:w-1/3 sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl"
+            className="fixed top-0 right-0 z-20 w-full h-full bg-white p-8 sm:w-1/2 xl:w-1/3 sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl"
             ref={shoppingCartRef}
           >
             <div className="flex justify-between items-center">
