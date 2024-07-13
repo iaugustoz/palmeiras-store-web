@@ -31,7 +31,7 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <img src={logo} className="w-16 sm:w-[74px]" alt="Logotipo" />
           <div className="h-[70px] border-solid border-gray-400 border-[1px]" />
-          <p className="font-semibold text-gray-500 sm:text-md max-w-0 leading-4">
+          <p className="font-semibold text-gray-500 max-w-0 leading-4">
             Official Store
           </p>
         </div>
