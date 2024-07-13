@@ -56,9 +56,9 @@ const Header = () => {
 
       {toggle && (
         <>
-          <div className="fixed w-full h-full backdrop-blur-lg inset-0"></div>
+          <div className="fixed inset-0  backdrop-blur-lg"></div>
           <div
-            className="z-20 top-0 right-0 w-full sm:w-[40%] xl:w-1/3 h-full absolute bg-white sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl p-8"
+            className="fixed top-0 right-0 z-20 w-full h-full bg-white p-8 sm:w-[40%] xl:w-1/3 sm:rounded-s-[40px] sm:shadow-black sm:shadow-2xl"
             ref={shoppingCartRef}
           >
             <div className="flex justify-between items-center">
@@ -68,7 +68,7 @@ const Header = () => {
                 <X className="hover:bg-green-200 rounded-full cursor-pointer" />
               </div>
             </div>
-            <div className="mt-2 mb-6 border-[1px] "></div>
+            <div className="mt-2 mb-6 border-[1px]"></div>
           </div>
         </>
       )}
