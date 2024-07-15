@@ -1,8 +1,8 @@
 import { Search } from 'lucide-react';
 
-interface SearchInputProps {
-  className?: string;
-}
+type SearchInputProps = {
+  className: string;
+};
 
 const SearchInput: React.FC<SearchInputProps> = ({ className }) => {
   return (
@@ -13,7 +13,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ className }) => {
       <input
         type="text"
         placeholder="Pesquisar"
-        className="pl-10 pr-4 py-2 w-full rounded-lg bg-[#edeff2] focus:outline-green-600"
+        className="pl-10 pr-4 py-3 w-full rounded-xl bg-[#edeff2] focus:outline-green-600"
       />
     </div>
   );

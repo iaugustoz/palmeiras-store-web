@@ -3,7 +3,7 @@ import logo from '@/assets/images/logo.png';
 import gsap from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import SearchInput from '@/components/common/SearchInput';
+import SearchInput from '@/components/form/input/SearchInput';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
