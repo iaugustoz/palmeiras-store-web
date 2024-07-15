@@ -29,9 +29,17 @@ const MainLogin = () => {
                 <Input type="email" placeholder="E-mail" />
               </div>
 
-              <button className="text center text-white py-4 rounded-xl bg-green-900 mt-8 w-full">
+              <button className="text center text-white py-4 rounded-xl bg-green-900 mt-8 w-full mb-7">
                 Continuar
               </button>
+
+              <div className="flex items-center gap-x-5 h-0.5">
+                <span className="border-2 w-1/2"></span>
+                <span className="font-bold text-[#e5e7eb] text-xl select-none">
+                  o
+                </span>
+                <span className="border-2 w-1/2"></span>
+              </div>
             </form>
           </div>
         </div>
