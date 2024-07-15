@@ -1,9 +1,9 @@
 import { User, ShoppingCart, X } from 'lucide-react';
-import logo from '@/assets/images/logo.png';
 import gsap from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SearchInput from '@/components/form/input/SearchInput';
+import Logotipo from '@/components/common/Logotipo';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -29,13 +29,7 @@ const Header = () => {
   return (
     <div className="mx-auto max-w-[80%]">
       <header className="flex justify-between items-center bg-white my-4 p-[18px]">
-        <div className="flex items-center space-x-2">
-          <img src={logo} className="w-16 sm:w-[74px]" alt="Logotipo" />
-          <div className="h-[70px] border-solid border-gray-400 border-[1px]" />
-          <p className="font-semibold text-gray-500 max-w-0 leading-4">
-            Official Store
-          </p>
-        </div>
+        <Logotipo />
 
         <SearchInput className="hidden md:flex w-1/3 mx-4" />
 
@@ -53,7 +47,7 @@ const Header = () => {
         </nav>
       </header>
 
-      <div className="md:hidden mb-6">
+      <div className="flex items-center md:hidden mb-6">
         <SearchInput className="w-full mx-4" />
       </div>
 
