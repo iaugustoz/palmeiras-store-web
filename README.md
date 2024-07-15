@@ -26,8 +26,9 @@ Projeto em andamento.
 
 ### Dependências
 
-- [lucide-react](https://lucide.dev/icons/)
-- [GSAP](https://gsap.com/)
+- [Lucide React](https://lucide.dev/icons/);
+- [GSAP](https://gsap.com/);
+- React Google Login.
 
 ## Instalando
 
