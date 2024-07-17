@@ -1,5 +1,6 @@
 import Input from '@/components/form/input/Input';
 import HeaderLogin from '../header/HeaderLogin';
+import { GoogleLogin } from '@react-oauth/google';
 import { X } from 'lucide-react';
 
 const MainLogin = () => {
@@ -29,17 +30,26 @@ const MainLogin = () => {
                 <Input type="email" placeholder="E-mail" />
               </div>
 
-              <button className="text center text-white py-4 rounded-xl bg-green-900 mt-8 w-full mb-7">
+              <button className="text center text-white py-4 rounded-xl bg-green-900 mt-8 w-full">
                 Continuar
               </button>
 
-              <div className="flex items-center gap-x-5 h-0.5">
+              <div className="flex items-center gap-x-5 h-0.5 my-7">
                 <span className="border-2 w-1/2"></span>
                 <span className="font-bold text-[#e5e7eb] text-xl select-none">
                   o
                 </span>
                 <span className="border-2 w-1/2"></span>
               </div>
+
+                <GoogleLogin
+                  onSuccess={(credentialResponse) => {
+                    console.log(credentialResponse);
+                  }}
+                  onError={() => {
+                    console.log('Login Failed');
+                  }}
+                />
             </form>
           </div>
         </div>
