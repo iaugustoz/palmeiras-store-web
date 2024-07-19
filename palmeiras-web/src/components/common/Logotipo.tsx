@@ -1,15 +1,20 @@
+import React from 'react';
 import logo from '../../assets/images/logo.png';
 
-const Logotipo = () => {
+type LogotipoProps = {
+  color: string;
+};
+
+const Logotipo: React.FC<LogotipoProps> = ({ color }) => {
   return (
     <>
-      <div className="flex items-center space-x-2">
+      <figure className="flex items-center space-x-2">
         <img src={logo} className="w-16 sm:w-[74px]" alt="Logotipo" />
         <div className="h-[70px] border-solid border-gray-400 border-[1px]" />
-        <p className="font-semibold  text-gray-500 text-white max-w-0 leading-4 select-none">
+        <figcaption className={`font-semibold ${color} max-w-0 leading-4 select-none`}>
           Official Store
-        </p>
-      </div>
+        </figcaption>
+      </figure>
     </>
   );
 };
