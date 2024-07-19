@@ -28,7 +28,7 @@ Projeto em andamento.
 
 - [Lucide React](https://lucide.dev/icons/);
 - [GSAP](https://gsap.com/);
-- React Google Login.
+- [Google React OAuth2](https://www.npmjs.com/package/@react-oauth/google).
 
 ## Instalando
 
