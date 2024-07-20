@@ -1,24 +1,16 @@
 import Input from '@/components/form/input/Input';
 import HeaderLogin from '../header/HeaderLogin';
-import { GoogleLogin } from '@react-oauth/google';
 import { X } from 'lucide-react';
+import GoogleOauth from '@/components/user/authentication/GoogleOauth';
 
 const MainLogin = () => {
-  const onSucess = (response: void) => {
-    console.log('Login bem sucedido: ', response);
-  };
-
-  const onFailure = (response: void) => {
-    console.log('Falha no login: ', response);
-  };
-
   return (
     <div className="relative">
       <HeaderLogin />
       <main className="backdrop-blur-sm">
         <section className="m-auto w-full text-center my-12 max-w-[90%] md:max-w-96 3xl:max-w-[550px]">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-green-900 mb-6 md:mb-12">
+          <div className="mb-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-green-900 dark:text-green-700 mb-6 md:mb-6">
               Olá!
             </h1>
             <h2 className="md:text-lg mb-5 dark:text-white">
@@ -52,11 +44,7 @@ const MainLogin = () => {
               <hr className="border-2 w-1/2"></hr>
             </div>
 
-            <GoogleLogin
-              context="signin"
-              onSuccess={onSucess}
-              onError={onFailure}
-            />
+            <GoogleOauth />
           </form>
         </section>
       </main>

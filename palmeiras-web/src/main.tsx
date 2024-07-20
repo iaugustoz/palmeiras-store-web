@@ -12,7 +12,7 @@ if (!googleClientId) {
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
-    <GoogleOAuthProvider clientId={JSON.stringify(googleClientId)}>
+    <GoogleOAuthProvider clientId={googleClientId}>
       <MainRoutes />
     </GoogleOAuthProvider>
   </BrowserRouter>
