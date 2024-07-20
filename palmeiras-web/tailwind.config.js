@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'media',
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -17,6 +18,7 @@ module.exports = {
       '4xl': '2000px',
     },
   },
-  extend: {},
+  extend: {
+  },
   plugins: [],
 };

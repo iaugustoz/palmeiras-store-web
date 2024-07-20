@@ -4,6 +4,14 @@ import { GoogleLogin } from '@react-oauth/google';
 import { X } from 'lucide-react';
 
 const MainLogin = () => {
+  const onSucess = (response: void) => {
+    console.log('Login bem sucedido: ', response);
+  };
+
+  const onFailure = (response: void) => {
+    console.log('Falha no login: ', response);
+  };
+
   return (
     <div className="relative">
       <HeaderLogin />
@@ -13,7 +21,7 @@ const MainLogin = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-green-900 mb-6 md:mb-12">
               Olá!
             </h1>
-            <h2 className="md:text-lg mb-5">
+            <h2 className="md:text-lg mb-5 dark:text-white">
               Faça login ou cadastre-se para acessar
             </h2>
           </div>
@@ -37,20 +45,17 @@ const MainLogin = () => {
             </button>
 
             <div className="flex items-center gap-x-5 h-0.5 my-7">
-              <span className="border-2 w-1/2"></span>
+              <hr className="border-2 w-1/2"></hr>
               <span className="font-bold text-[#e5e7eb] text-xl select-none">
                 o
               </span>
-              <span className="border-2 w-1/2"></span>
+              <hr className="border-2 w-1/2"></hr>
             </div>
 
             <GoogleLogin
-              onSuccess={(credentialResponse) => {
-                console.log(credentialResponse);
-              }}
-              onError={() => {
-                console.log('Login Failed');
-              }}
+              context="signin"
+              onSuccess={onSucess}
+              onError={onFailure}
             />
           </form>
         </section>
