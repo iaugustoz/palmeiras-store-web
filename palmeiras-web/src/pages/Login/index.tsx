@@ -5,8 +5,35 @@ import { X } from 'lucide-react';
 import GoogleOauth from '@/components/user/authentication/GoogleSignIn';
 import Apple from '@/components/user/authentication/AppleSignIn';
 import Button from '@/components/common/Button';
+import { useEffect, useState } from 'react';
 
 const Login = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const emailInput = document.querySelector('input');
+    if (emailInput) {
+      emailInput.addEventListener('input', handleInput);
+    }
+    return () => {
+      if (emailInput) {
+        emailInput.removeEventListener('input', handleInput);
+      }
+    };
+  }, []);
+
+  const handleInput = () => {
+    setVisible(!visible);
+  };
+
+  const removeText = () => {
+    const emailInput = document.querySelector('input');
+    if (emailInput) {
+      (emailInput as HTMLInputElement).value = '';
+      setVisible(false);
+    }
+  };
+
   return (
     <>
       <div className="relative">
@@ -27,8 +54,11 @@ const Login = () => {
               <div className="relative">
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                   <X
+                    onClick={removeText}
                     color="#6b7280"
-                    className="h-6 w-6 md:h-7 md:w-7 cursor-pointer"
+                    className={`h-6 w-6 md:h-7 md:w-7 cursor-pointer 
+                      ${visible ? 'block' : 'hidden'}
+                    `}
                   />
                 </div>
                 <Input type="email" placeholder="E-mail" />
