@@ -39,7 +39,7 @@ const Login = () => {
       <div className="relative">
         <HeaderLogin />
 
-        <main className="backdrop-blur-sm">
+        <main>
           <section className="m-auto w-full text-center my-12 max-w-[90%] md:max-w-96 3xl:max-w-[550px]">
             <div className="mb-10">
               <h1 className="text-4xl md:text-5xl font-bold text-green-900 dark:text-green-700 mb-6 md:mb-6">

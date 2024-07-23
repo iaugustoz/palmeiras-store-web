@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const HeaderLogin = () => {
   return (
     <>
-      <header className="sticky top-0 z-10 backdrop-blur-lg bg-opacity-80 py-5">
-        <nav className="flex justify-between items-center py-5 px-8 relative">
+      <header className="sticky top-0 z-20 backdrop-blur-md bg-opacity-80 py-5 w-[90.0%] mx-auto">
+        <nav className="flex justify-between items-center py-5 px-8 relative z-10">
           <Link to="/" className="flex items-center text-lg dark:text-white">
             <ChevronLeft className="dark:text-white" />
             Voltar
