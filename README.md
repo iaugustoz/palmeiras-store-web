@@ -28,6 +28,7 @@ Projeto em andamento.
 
 - [Lucide React](https://lucide.dev/icons/);
 - [GSAP](https://gsap.com/);
+- [Perfect Scroll](https://perfectscrollbar.com/);
 - [Google React OAuth2](https://www.npmjs.com/package/@react-oauth/google).
 
 ## Instalando
