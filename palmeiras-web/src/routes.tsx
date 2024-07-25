@@ -6,6 +6,14 @@ function MainRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route
+        path="/produtos"
+        element={
+          <>
+            <div></div>
+          </>
+        }
+      />
       <Route path="/login" element={<Login />} />
     </Routes>
   );
