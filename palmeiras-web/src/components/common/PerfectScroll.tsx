@@ -3,7 +3,6 @@ import { useRef, useEffect, ReactNode } from 'react';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
 import '../../style.css'
 
-
 interface PerfectScrollProps {
   children: ReactNode;
 }
