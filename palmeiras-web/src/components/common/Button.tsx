@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={action ? action : () => {}}
-      className={`flex justify-center items-center gap-x-3 ${classes} py-4 rounded-xl bg-green-900 w-full`}
+      className={`flex justify-center items-center gap-x-3 ${classes} py-4 rounded-xl w-full`}
     >
       {hasLogo && Icon && <Icon className={`${classesLogo}`} />}
       {text}

@@ -21,3 +21,7 @@
     object-position: center;
   }
 }
+
+.ps__thumb-y {
+  background: #4caf50 !important;
+}
