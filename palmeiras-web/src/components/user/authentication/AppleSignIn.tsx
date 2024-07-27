@@ -1,4 +1,3 @@
-import React from 'react';
 import AppleLogin from 'react-apple-login';
 import { SiApple } from 'react-icons/si';
 import Button from '@/components/common/Button';
@@ -6,8 +5,8 @@ import Button from '@/components/common/Button';
 const Apple = () => {
   return (
     <AppleLogin
-      clientId="your-client-id" // Substitua pelo seu clientId correto
-      redirectURI="https://google.com.br" // Substitua pela URI correta
+      clientId="your-client-id" 
+      redirectURI="https://google.com.br"
       usePopup={true}
       render={({ onClick }) => (
         <Button
