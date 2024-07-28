@@ -14,31 +14,37 @@ const Home = () => {
     {
       id: 1,
       price: 359.99,
-      productName: 'Camisa I 24/25, Verde',
+      productName: 'Camisa I 24/25 Torcedor',
       image: 'path',
     },
     {
       id: 2,
       price: 359.99,
-      productName: 'Camisa I 24/25, Branca',
+      productName: 'Camisa I 24/25 Jogador',
       image: 'path',
     },
     {
       id: 3,
       price: 299.99,
-      productName: 'Camisa II 24/25, Verde',
+      productName: 'Camisa II 24/25 Torcedor',
       image: 'path',
     },
     {
       id: 4,
       price: 289.99,
-      productName: 'Camisa II 24/25, Verde',
+      productName: 'Camisa II 24/25 Jogador',
       image: 'path',
     },
     {
       id: 5,
       price: 279.99,
-      productName: 'Camisa II 24/25, Verde',
+      productName: 'Camisa III 24/25 Jogador',
+      image: 'path',
+    },
+    {
+      id: 6,
+      price: 269.99,
+      productName: 'Camisa III 24/25 Jogador',
       image: 'path',
     },
   ];
@@ -82,8 +88,8 @@ const Home = () => {
               },
 
               1024: {
-                slidesPerView: 3.5,
-                spaceBetween: 30,
+                slidesPerView: 3.25,
+                spaceBetween: 20,
               },
 
               1455: {

@@ -66,13 +66,10 @@ const Login = () => {
 
               <Button
                 classes="text-center text-white py-4 rounded-xl bg-green-900 mt-6 w-full active:scale-[0.99]"
-                classesLogo=""
                 text="Continuar"
                 action={() => {
                   event?.preventDefault();
                 }}
-                hasLogo={false}
-                icon={undefined}
               />
 
               <div className="flex items-center gap-x-5 h-0.5 my-7">

@@ -1,7 +1,7 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 import { useRef, useEffect, ReactNode } from 'react';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
-import '../../style.css'
+import '../../style.css';
 
 interface PerfectScrollProps {
   children: ReactNode;
@@ -25,7 +25,7 @@ const PerfectScroll: React.FC<PerfectScrollProps> = ({ children }) => {
   }, []);
 
   return (
-    <div ref={mainRef} className="z-[99999] relative overflow-hidden h-[100vh]">
+    <div ref={mainRef} className="z-[99999] relative h-[100vh]">
       {children}
     </div>
   );

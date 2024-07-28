@@ -2,10 +2,10 @@ import React from 'react';
 
 type ButtonProps = {
   classes: string;
-  classesLogo: string;
+  classesLogo?: string;
   text: string;
   action?: () => void;
-  hasLogo: boolean;
+  hasLogo?: boolean;
   icon?: React.ElementType;
 };
 

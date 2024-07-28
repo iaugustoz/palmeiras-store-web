@@ -1,3 +1,5 @@
+import Button from '../common/Button';
+
 type ProductCardProps = {
   price: number;
   productName: string;
@@ -10,17 +12,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
   image,
 }) => {
   return (
-    <div className="h-[400px] bg-white shadow shadow-gray-500 rounded-3xl p-5 my-5">
+    <div className="h-[450px] bg-white shadow shadow-gray-500 rounded-3xl p-5 my-5">
       <img
         src={image}
         alt={productName}
-        className="w-full h-[60%] object-cover rounded-t-3xl"
+        className="w-full h-[55%] object-cover rounded-t-3xl"
       />
-      <div className="mt-4">
+      <div className="flex flex-col justify-end mt-4">
         <h3 className="text-lg font-bold">{productName}</h3>
         <div className="mt-4">
-          <span className="text-xl font-semibold">R${price}</span>
+          <span className="text-lg font-semibold">R${price}</span>
         </div>
+        <Button
+          text="Ver produto"
+          action={() => {}}
+          classes="bg-transparent text-green-600 border-2 border hover:border-green-500 hover:transition-[border] mt-5"
+        />
       </div>
     </div>
   );

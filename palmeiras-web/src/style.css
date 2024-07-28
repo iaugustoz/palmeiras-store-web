@@ -25,3 +25,11 @@
 .ps__thumb-y {
   background: #4caf50 !important;
 }
+
+.ps--active-x {
+  overflow-x: hidden;
+}
+
+.ps__thumb-x {
+  overflow-x: hidden;
+}
