@@ -5,50 +5,57 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 type Product = {
   id: number;
   price: number;
+  description: string;
   productName: string;
   image: string;
 };
 
-const Home = () => {
-  const products: Product[] = [
-    {
-      id: 1,
-      price: 359.99,
-      productName: 'Camisa I 24/25 Torcedor',
-      image: 'path',
-    },
-    {
-      id: 2,
-      price: 359.99,
-      productName: 'Camisa I 24/25 Jogador',
-      image: 'path',
-    },
-    {
-      id: 3,
-      price: 299.99,
-      productName: 'Camisa II 24/25 Torcedor',
-      image: 'path',
-    },
-    {
-      id: 4,
-      price: 289.99,
-      productName: 'Camisa II 24/25 Jogador',
-      image: 'path',
-    },
-    {
-      id: 5,
-      price: 279.99,
-      productName: 'Camisa III 24/25 Jogador',
-      image: 'path',
-    },
-    {
-      id: 6,
-      price: 269.99,
-      productName: 'Camisa III 24/25 Jogador',
-      image: 'path',
-    },
-  ];
+const products: Product[] = [
+  {
+    id: 1,
+    price: 359.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa I 24/25 Torcedor',
+    image: 'path',
+  },
+  {
+    id: 2,
+    price: 359.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa I 24/25 Jogador',
+    image: 'path',
+  },
+  {
+    id: 3,
+    price: 299.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa II 24/25 Torcedor',
+    image: 'path',
+  },
+  {
+    id: 4,
+    price: 289.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa II 24/25 Jogador',
+    image: 'path',
+  },
+  {
+    id: 5,
+    price: 279.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa III 24/25 Jogador',
+    image: 'path',
+  },
+  {
+    id: 6,
+    price: 269.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa III 24/25 Jogador',
+    image: 'path',
+  },
+];
 
+const Home: React.FC = () => {
   return (
     <>
       <Header />
@@ -66,6 +73,7 @@ const Home = () => {
 
           <Swiper
             pagination={{ clickable: true }}
+            spaceBetween={30}
             slidesPerView={4.5}
             slidesPerGroup={1}
             keyboard={true}
@@ -73,38 +81,34 @@ const Home = () => {
             breakpoints={{
               300: {
                 slidesPerView: 1.25,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 centeredSlides: true,
               },
-
               520: {
                 slidesPerView: 1.75,
-                spaceBetween: 20,
+                spaceBetween: 15,
               },
-
               768: {
                 slidesPerView: 2.5,
                 spaceBetween: 20,
               },
-
-              1024: {
-                slidesPerView: 3.25,
-                spaceBetween: 20,
+              1100: {
+                slidesPerView: 3.5,
               },
-
-              1455: {
-                slidesPerView: 4.25,
-                spaceBetween: 40,
+              1536: {
+                slidesPerView: 4.5,
+                spaceBetween: 30,
               },
-
               2100: {
-                spaceBetween: 70,
+                slidesPerView: 4.5,
+                spaceBetween: 40,
               },
             }}
           >
             {products.map((product) => (
               <SwiperSlide key={product.id}>
                 <ProductCard
+                  description={product.description}
                   image={product.image}
                   price={product.price}
                   productName={product.productName}
