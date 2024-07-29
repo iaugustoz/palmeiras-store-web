@@ -1,6 +1,7 @@
 import Header from '@/components/layout/header/Header';
 import ProductCard from '../../components/product/ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 
 type Product = {
   id: number;
@@ -107,12 +108,14 @@ const Home: React.FC = () => {
           >
             {products.map((product) => (
               <SwiperSlide key={product.id}>
-                <ProductCard
-                  description={product.description}
-                  image={product.image}
-                  price={product.price}
-                  productName={product.productName}
-                />
+                <Link to="/opa">
+                  <ProductCard
+                    description={product.description}
+                    image={product.image}
+                    price={product.price}
+                    productName={product.productName}
+                  />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
