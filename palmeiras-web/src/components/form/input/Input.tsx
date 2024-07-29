@@ -4,7 +4,6 @@ type InputProps = {
 };
 
 const Input: React.FC<InputProps> = ({ type, placeholder }) => {
-
   return (
     <>
       <input
