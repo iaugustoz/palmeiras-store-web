@@ -17,42 +17,48 @@ const products: Product[] = [
     price: 359.99,
     description: 'Short description of the product.',
     productName: 'Camisa I 24/25 Torcedor',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
   {
     id: 2,
     price: 359.99,
     description: 'Short description of the product.',
     productName: 'Camisa I 24/25 Jogador',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
   {
     id: 3,
     price: 299.99,
     description: 'Short description of the product.',
     productName: 'Camisa II 24/25 Torcedor',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
   {
     id: 4,
     price: 289.99,
     description: 'Short description of the product.',
     productName: 'Camisa II 24/25 Jogador',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
   {
     id: 5,
     price: 279.99,
     description: 'Short description of the product.',
     productName: 'Camisa III 24/25 Jogador',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
   {
     id: 6,
     price: 269.99,
     description: 'Short description of the product.',
     productName: 'Camisa III 24/25 Jogador',
-    image: 'path',
+    image:
+      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
   },
 ];
 
