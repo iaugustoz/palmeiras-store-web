@@ -1,7 +1,7 @@
 import Logotipo from '@/components/common/Logotipo';
 import { Link } from 'react-router-dom';
 
-const FooterLogin = () => {
+const Footer = () => {
   return (
     <footer className="border-t-2 py-4 px-8 bg-green-900 mt-24">
       <div className="flex justify-between items-center">
@@ -19,7 +19,7 @@ const FooterLogin = () => {
           </Link>
 
           <Link to="/termos-e-condicoes" className="text-sm text-white">
-            Termos & Condições
+            Termos &amp; Condições
           </Link>
         </nav>
       </div>
@@ -43,4 +43,4 @@ const FooterLogin = () => {
   );
 };
 
-export default FooterLogin;
+export default Footer;
