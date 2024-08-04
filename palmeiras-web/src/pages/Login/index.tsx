@@ -1,6 +1,6 @@
-import FooterLogin from '@/components/layout/footer/FooterLogin';
+import Footer from '@/components/layout/footer/Footer';
 import Input from '@/components/form/input/Input';
-import HeaderLogin from '../../components/layout/header/Header';
+import Header from '../../components/layout/header/Header';
 import { X } from 'lucide-react';
 import GoogleOauth from '@/components/user/authentication/GoogleSignIn';
 import Apple from '@/components/user/authentication/AppleSignIn';
@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <>
-      <HeaderLogin />
+      <Header />
 
       <main>
         <section className="m-auto w-full text-center my-12 max-w-[90%] md:max-w-96 3xl:max-w-[550px]">
@@ -85,7 +85,7 @@ const Login = () => {
         </section>
       </main>
 
-      <FooterLogin />
+      <Footer />
     </>
   );
 };

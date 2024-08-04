@@ -2,7 +2,7 @@ import { ChevronLeft } from 'lucide-react';
 import logo from '../../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
-const HeaderLogin = () => {
+const Header = () => {
   return (
     <>
       <header className="py-5 w-full mx-auto">
@@ -21,4 +21,4 @@ const HeaderLogin = () => {
   );
 };
 
-export default HeaderLogin;
+export default Header;

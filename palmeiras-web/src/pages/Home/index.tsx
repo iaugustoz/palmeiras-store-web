@@ -1,4 +1,5 @@
-import Header from '@/components/layout/header/Header';
+import HomeHeader from '@/components/layout/header/HomeHeader';
+import HomeFooter from '@/components/layout/footer/HomeFooter';
 import ProductCard from '../../components/product/ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
@@ -65,7 +66,7 @@ const products: Product[] = [
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
+      <HomeHeader />
 
       <main>
         <section>
@@ -84,7 +85,7 @@ const Home: React.FC = () => {
             slidesPerView={4.5}
             slidesPerGroup={1}
             keyboard={true}
-            navigation
+            autoplay={{ delay: 3000 }}
             breakpoints={{
               300: {
                 slidesPerView: 1.25,
@@ -114,7 +115,7 @@ const Home: React.FC = () => {
           >
             {products.map((product) => (
               <SwiperSlide key={product.id}>
-                <Link to={`/product/${product.id}`}>
+                <Link to={`/product/${product.id}`} target="_top">
                   <ProductCard
                     description={product.description}
                     image={product.image}
@@ -127,6 +128,8 @@ const Home: React.FC = () => {
           </Swiper>
         </section>
       </main>
+
+      <HomeFooter />
     </>
   );
 };

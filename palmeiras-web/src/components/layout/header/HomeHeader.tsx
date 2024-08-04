@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SearchInput from '@/components/form/input/SearchInput';
 import Logotipo from '@/components/common/Logotipo';
 
-const Header = () => {
+const HomeHeader = () => {
   const [toggle, setToggle] = useState(false);
   const shoppingCartRef = useRef(null);
 
@@ -37,13 +37,13 @@ const Header = () => {
           <button onClick={() => setToggle(!toggle)}>
             <ShoppingCart
               size={24}
-              className="cursor-pointer text-[#4b5563] dark:text-white"
+              className="hover:text-green-500 dark:hover:text-green-300 cursor-pointer text-[#4b5563] dark:text-white"
             />
           </button>
           <Link to="/login" aria-label="User login">
             <User
               size={24}
-              className="cursor-pointer text-[#4b5563] dark:text-white"
+              className="hover:text-green-500 dark:hover:text-green-300 cursor-pointer text-[#4b5563] dark:text-white"
             />
           </Link>
         </nav>
@@ -79,4 +79,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HomeHeader;

@@ -10,15 +10,27 @@ const Footer = () => {
         </div>
 
         <nav className="hidden sm:flex items-center gap-x-5">
-          <Link to="/cookies" className="text-sm text-white">
+          <Link 
+            to="/cookies"
+            target='_top'
+            className="text-sm text-white"
+          >
             Cookies
           </Link>
 
-          <Link to="/aviso-legal" className="text-sm text-white">
+          <Link 
+            to="/aviso-legal" 
+            target='_top'
+            className="text-sm text-white"
+          >
             Aviso Legal
           </Link>
 
-          <Link to="/termos-e-condicoes" className="text-sm text-white">
+          <Link 
+            to="/termos-e-condicoes"
+            target='_top' 
+            className="text-sm text-white"
+          >
             Termos &amp; Condições
           </Link>
         </nav>
@@ -27,16 +39,28 @@ const Footer = () => {
       <div className="sm:hidden border my-5"></div>
 
       <nav className="flex justify-center gap-x-5 sm:hidden">
-        <Link to="/cookies" className="text-sm text-white">
+        <Link 
+          to="/cookies" 
+          target="_top" 
+          className="text-sm text-white"
+        >
           Cookies
         </Link>
 
-        <Link to="/aviso-legal" className="text-sm text-white">
+        <Link 
+          to="/aviso-legal" 
+          target="_top" 
+          className="text-sm text-white"
+        >
           Aviso Legal
         </Link>
 
-        <Link to="/termos-e-condicoes" className="text-sm text-white">
-          Termos & Condições
+        <Link
+          to="/termos-e-condicoes"
+          target="_top"
+          className="text-sm text-white"
+        >
+          Termos &amp; Condições
         </Link>
       </nav>
     </footer>
