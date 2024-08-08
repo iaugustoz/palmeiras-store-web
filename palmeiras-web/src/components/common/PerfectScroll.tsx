@@ -25,7 +25,7 @@ const PerfectScroll: React.FC<PerfectScrollProps> = ({ children }) => {
   }, []);
 
   return (
-    <div ref={mainRef} className="z-[99999] relative h-[100vh]">
+    <div ref={mainRef} className="relative h-[100vh]">
       {children}
     </div>
   );
