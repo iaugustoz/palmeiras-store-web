@@ -10,7 +10,7 @@ const Apple = () => {
       usePopup={true}
       render={({ onClick }) => (
         <Button
-          classes="bg-transparent text-green-600 border-2 border hover:border-green-500 hover:transition-[border]"
+          classes="bg-transparent text-green-600 border-2 border hover:border-green-500 hover:transition-[border] w-full py-4 rounded-xl"
           classesLogo="text-green-600 text-2xl"
           text="Entrar com a Apple"
           action={onClick}

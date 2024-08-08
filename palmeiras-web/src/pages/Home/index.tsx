@@ -1,4 +1,5 @@
-import Header from '@/components/layout/header/Header';
+import HomeHeader from '@/components/layout/header/HomeHeader';
+import HomeFooter from '@/components/layout/footer/HomeFooter';
 import ProductCard from '../../components/product/ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa I 24/25 Torcedor',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa I 24/25 Jogador',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa II 24/25 Torcedor',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
   {
     id: 4,
@@ -42,7 +43,7 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa II 24/25 Jogador',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
   {
     id: 5,
@@ -50,7 +51,7 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa III 24/25 Jogador',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
   {
     id: 6,
@@ -58,14 +59,14 @@ const products: Product[] = [
     description: 'Short description of the product.',
     productName: 'Camisa III 24/25 Jogador',
     image:
-      'https://avatars.githubusercontent.com/u/103331095?s=400&u=564ec8d7e788d41399b5a5d8d74651e5988a584d&v=4',
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
 ];
 
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
+      <HomeHeader />
 
       <main>
         <section>
@@ -84,7 +85,7 @@ const Home: React.FC = () => {
             slidesPerView={4.5}
             slidesPerGroup={1}
             keyboard={true}
-            navigation
+            autoplay={{ delay: 3000 }}
             breakpoints={{
               300: {
                 slidesPerView: 1.25,
@@ -114,7 +115,7 @@ const Home: React.FC = () => {
           >
             {products.map((product) => (
               <SwiperSlide key={product.id}>
-                <Link to="/opa">
+                <Link to={`/product/${product.id}`} target="_top">
                   <ProductCard
                     description={product.description}
                     image={product.image}
@@ -127,6 +128,8 @@ const Home: React.FC = () => {
           </Swiper>
         </section>
       </main>
+
+      <HomeFooter />
     </>
   );
 };
