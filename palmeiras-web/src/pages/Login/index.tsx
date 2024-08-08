@@ -64,7 +64,7 @@ const Login = () => {
             </div>
 
             <Button
-              classes="text-center text-white py-4 rounded-xl bg-green-900 mt-6 w-full active:scale-[0.99]"
+              classes="text-center text-white py-4 rounded-xl bg-green-900 mt-6 w-full active:scale-[0.99] w-full"
               text="Continuar"
               action={() => {
                 event?.preventDefault();

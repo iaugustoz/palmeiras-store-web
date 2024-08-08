@@ -1,6 +1,7 @@
 import Button from '@/components/common/Button';
 import Footer from '@/components/layout/footer/Footer';
 import HeaderLogin from '@/components/layout/header/Header';
+import SelectSize from '@/components/product/SelectSize';
 
 const ProductDetails = () => {
   return (
@@ -19,17 +20,18 @@ const ProductDetails = () => {
 
           <div className="flex flex-col w-full md:w-1/2 gap-y-4">
             <div className="bg-white shadow-lg rounded-2xl pt-12 p-8 w-full">
-              <h1 className="text-4xl sm:text-5xl">
+              <h2 className="text-4xl sm:text-5xl">
                 Camisa Palmeiras Puma I 24/25 - Jogador
-              </h1>
-
+              </h2>
               <div className="flex flex-col leading-5 mt-8">
                 <p className="text-xl font-semibold">R$ 399.99</p>
                 <p className="text-gray-400">Produto Oficial</p>
               </div>
 
+              <SelectSize />
+
               <Button
-                classes="text-center text-white py-4 rounded-xl bg-green-900 mt-6 w-full active:scale-[0.99]"
+                classes="text-center text-white py-4 rounded-xl bg-green-900 mt-6 w-full active:scale-[0.99] w-full"
                 action={() => {}}
                 text="Adicionar ao carrinho"
               />
