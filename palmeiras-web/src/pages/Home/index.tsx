@@ -129,6 +129,18 @@ const Home: React.FC = () => {
         </section>
       </main>
 
+      <section className="mt-20">
+        <div className="banner h-[550px] sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full relative">
+          <div
+            className="
+      absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+      md:top-1/2 md:left-auto md:-right-10 lg:-right-20 md:transform md:-translate-y-1/2
+      bg-white w-[80%] sm:w-[60%] md:w-[30%]
+    "
+          ></div>
+        </div>
+      </section>
+
       <HomeFooter />
     </>
   );

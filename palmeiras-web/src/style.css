@@ -4,7 +4,7 @@
 
 @layer components {
   .image {
-    background-image: url('./assets/images/banner-palmeiras.jpg');
+    background-image: url('./assets/images/main-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,16 @@
   }
 
   .image-mobile {
-    background-image: url('./assets/images/banner-palmeiras-mobile.jpg');
+    background-image: url('./assets/images/main-image-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .banner {
+    background-image: url('./assets/images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
