@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           <div className="sm:hidden image-mobile h-[550px] w-full"></div>
         </section>
 
-        <section className="mx-auto max-w-[80%] py-20">
+        <section className="mx-auto max-w-[80%] mt-20">
           <h2 className="text-center dark:text-white text-5xl font-bold mb-10">
             Coleções
           </h2>
@@ -134,9 +134,9 @@ const Home: React.FC = () => {
         <div className="banner h-[400px] sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full relative">
           <div
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-      md:top-1/2 md:left-auto md:-right-10 lg:-right-20 md:transform md:-translate-y-1/2"
+      md:top-1/2 md:left-auto md:-right-10 lg:-right-20 md:transform md:-translate-y-1/2 w-[80%] sm:w-[60%] md:w-[30%]"
           >
-            <div className="absolute inset-0 bg-white opacity-70 rounded-xl"></div>
+            <div className="absolute inset-0 bg-white opacity-85 rounded-xl"></div>
 
             <div className="relative w-full p-6">
               <h2 className="font-semibold text-3xl sm:text-4xl max-w-[400px]">
