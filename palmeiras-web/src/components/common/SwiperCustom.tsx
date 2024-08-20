@@ -123,6 +123,10 @@ const SwiperCustom = () => {
           1536: {
             slidesPerView: 4,
           },
+
+          1900: {
+            slidesPerView: 5.5
+          }
         }}
       >
         {products.map((product) => (

@@ -24,15 +24,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </h3>
         <p className="text-gray-600 mt-2 text-sm sm:text-base">{description}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-semibold text-green-600">
+          <span className="text-lg font-semibold">
             R${price}
           </span>
-          <button
-            className="px-4 py-2 bg-green-600 text-white rounded-full text-sm font-medium hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
-            aria-label={`Adicionar ${productName} ao carrinho`}
-          >
-            Adicionar ao Carrinho
-          </button>
         </div>
       </div>
     </div>
