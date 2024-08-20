@@ -9,7 +9,7 @@ const ProductDetails = () => {
       <HeaderLogin />
 
       <main className="w-[80%] 4xl:w-[60%] mx-auto mt-20">
-        <div className="flex items-center flex-col gap-y-8 md:items-start md:flex-row md:gap-10">
+        <div className="flex items-center flex-col gap-y-4 md:items-start md:flex-row md:gap-10">
           <div className="w-full md:w-1/2">
             <img
               className="rounded-2xl shadow-lg"
