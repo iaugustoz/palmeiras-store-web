@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
+import Button from '@/components/common/Button';
 import ProductCard from '../product/ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-import { EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useRef } from 'react';
 
 type Product = {
   id: number;
@@ -84,64 +85,113 @@ const products: Product[] = [
     image:
       'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
   },
+
+  {
+    id: 9,
+    price: 269.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa III 24/25 Jogador',
+    image:
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
+  },
+
+  {
+    id: 10,
+    price: 259.99,
+    description: 'Short description of the product.',
+    productName: 'Camisa III 24/25 Jogador',
+    image:
+      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
+  },
 ];
 
 const SwiperCustom = () => {
+  const prevRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
+
   return (
     <>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={4}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1.5,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        modules={[EffectCoverflow]}
-        breakpoints={{
-          300: {
-            slidesPerView: 1.5,
-          },
+      <div className="flex items-center max-w-[85%] 4xl:max-w-[80%] mx-auto gap-x-4 xl:gap-x-10">
+        <Button
+          text=""
+          classes="hidden sm:block size-auto p-2"
+          classesLogo="dark:text-white text-4xl"
+          hasLogo={true}
+          icon={IoIosArrowBack}
+          ref={prevRef}
+        />
 
-          500: {
-            slidesPerView: 2.25,
-          },
+        <Button
+          text=""
+          classes="hidden sm:block size-auto p-2 order-1"
+          classesLogo="dark:text-white text-4xl"
+          hasLogo={true}
+          icon={IoIosArrowForward}
+          ref={nextRef}
+        />
 
-          900: {
-            slidesPerView: 3,
-          },
-
-          1250: {
-            slidesPerView: 3.5,
-          },
-
-          1536: {
-            slidesPerView: 4,
-          },
-
-          1900: {
-            slidesPerView: 5.5
-          }
-        }}
-      >
-        {products.map((product) => (
-          <SwiperSlide key={product.id}>
-            <Link to={`/product/${product.id}`} target="_top">
-              <ProductCard
-                description={product.description}
-                image={product.image}
-                price={product.price}
-                productName={product.productName}
-              />
-            </Link>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={4}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.25,
+          }}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            if (typeof swiper.params.navigation !== 'boolean') {
+              const navigationParams = swiper.params.navigation!;
+              navigationParams.prevEl = prevRef.current;
+              navigationParams.nextEl = nextRef.current;
+            }
+          }}
+          modules={[EffectCoverflow, Navigation]}
+          breakpoints={{
+            300: {
+              slidesPerView: 1.5,
+            },
+            400: {
+              slidesPerView: 1.75,
+            },
+            500: {
+              slidesPerView: 2.25,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+            1250: {
+              slidesPerView: 3.5,
+            },
+            1536: {
+              slidesPerView: 4,
+            },
+            1900: {
+              slidesPerView: 5.5,
+            },
+          }}
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <Link to={`/product/${product.id}`} target="_top">
+                <ProductCard
+                  description={product.description}
+                  image={product.image}
+                  price={product.price}
+                  productName={product.productName}
+                />
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 };

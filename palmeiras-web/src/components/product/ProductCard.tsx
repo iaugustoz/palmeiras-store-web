@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   image,
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-3xl p-5 my-5 hover:shadow-2xl transition-shadow duration-300 focus-within:shadow-2xl">
+    <div className="bg-white border rounded-3xl p-5 my-5 duration-300">
       <img
         src={image}
         alt={`Imagem do produto ${productName}`}
@@ -24,9 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </h3>
         <p className="text-gray-600 mt-2 text-sm sm:text-base">{description}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-semibold">
-            R${price}
-          </span>
+          <span className="text-lg font-semibold">R${price}</span>
         </div>
       </div>
     </div>

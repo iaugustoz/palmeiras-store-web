@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           <div className="sm:hidden image-mobile h-[550px] w-full"></div>
         </section>
 
-        <section className="mx-auto max-w-[80%] mt-20">
+        <section className=" mt-20">
           <h2 className="text-center dark:text-white text-5xl font-bold mb-10">
             Coleções
           </h2>
