@@ -16,6 +16,7 @@
     "dotenv": "^16.4.5",
     "gsap": "^3.12.5",
     "lucide-react": "^0.400.0",
+    "palmeiras-web": "file:",
     "perfect-scrollbar": "^1.5.5",
     "react": "^18.3.1",
     "react-apple-login": "^1.1.6",
