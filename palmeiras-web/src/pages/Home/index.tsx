@@ -3,7 +3,10 @@ import HomeFooter from '@/components/layout/footer/HomeFooter';
 import Button from '@/components/common/Button';
 import SwiperCustom from '@/components/common/SwiperCustom';
 
-import palmeirasIII from '@/assets/images/products/palmeiras_24.25_III.avif';
+import camisaI from '@/assets/images/products/camisaI.png';
+import camisaII from '@/assets/images/products/camisaII.png';
+import camisaIII from '@/assets/images/products/camisaIII.png';
+import comemorativaMundial from '@/assets/images/products/comemorativa_mundial.png';
 
 const Home: React.FC = () => {
   return (
@@ -24,16 +27,34 @@ const Home: React.FC = () => {
           <SwiperCustom />
         </section>
 
-        <section className='my-20'>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 gap-y-8 mx-auto max-w-[80%]">
-            <div className="flex flex-col gap-y-8">
-              <img className="rounded-xl object-cover" src={palmeirasIII} alt="Teste 1" />
-              <img className="rounded-xl aspect-auto" src={palmeirasIII} alt="Teste 2" />
-            </div>
+        <section className="my-20">
+          <div className="m-auto w-[80%] 4xl:grid 4xl:items-center 4xl:justify-around">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col items-center gap-y-8 w-full">
+                <img
+                  className="rounded-3xl 3xl:size-[650px]"
+                  src={camisaI}
+                  alt="Teste 1"
+                />
+                <img
+                  className="rounded-3xl 3xl:size-[650px]"
+                  src={camisaIII}
+                  alt="Teste 2"
+                />
+              </div>
 
-            <div className="flex flex-col gap-y-8 md:mt-28" >
-              <img className="rounded-xl aspect-auto" src={palmeirasIII} alt="Teste 2" />
-              <img className="rounded-xl aspect-auto" src={palmeirasIII} alt="Teste 2" />
+              <div className="flex flex-col items-center gap-y-8 w-full md:mt-28">
+                <img
+                  className="rounded-3xl 3xl:size-[650px]"
+                  src={comemorativaMundial}
+                  alt="Teste 2"
+                />
+                <img
+                  className="rounded-3xl 3xl:size-[650px]"
+                  src={camisaII}
+                  alt="Teste 2"
+                />
+              </div>
             </div>
           </div>
         </section>
