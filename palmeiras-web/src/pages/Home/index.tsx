@@ -21,7 +21,7 @@ const Home: React.FC = () => {
 
         <section className="mt-20">
           <h2 className="text-center dark:text-white text-5xl font-bold mb-10">
-            Coleções
+            Favoritos dos Palestrinos
           </h2>
 
           <SwiperCustom />
