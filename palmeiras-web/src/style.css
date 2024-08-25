@@ -4,7 +4,7 @@
 
 @layer components {
   .image {
-    background-image: url('./assets/images/main-image.jpg');
+    background-image: url('./assets/images/banners/main-image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   }
 
   .image-mobile {
-    background-image: url('./assets/images/main-image-mobile.jpg');
+    background-image: url('./assets/images/banners/main-image-mobile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,8 +21,17 @@
     object-position: center;
   }
 
-  .banner {
-    background-image: url('./assets/images/banner.jpg');
+  .banner-leisure {
+    background-image: url('./assets/images/banners/banner-leisure.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .banner-camisa-93 {
+    background-image: url('./assets/images/banners/banner-camisa-93.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

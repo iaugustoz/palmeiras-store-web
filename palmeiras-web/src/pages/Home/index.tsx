@@ -16,10 +16,10 @@ const Home: React.FC = () => {
       <main>
         <section>
           <div className="hidden sm:block image sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full"></div>
-          <div className="sm:hidden image-mobile h-[550px] w-full"></div>
+          <div className="sm:hidden image-mobile h-96 w-full"></div>
         </section>
 
-        <section className=" mt-20">
+        <section className="mt-20">
           <h2 className="text-center dark:text-white text-5xl font-bold mb-10">
             Coleções
           </h2>
@@ -28,9 +28,13 @@ const Home: React.FC = () => {
         </section>
 
         <section className="my-20">
+          <div className="banner-camisa-93 h-[400px] sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full"></div>
+        </section>
+
+        <section className="mt-10">
           <div className="m-auto w-[80%] 4xl:grid 4xl:items-center 4xl:justify-around">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col items-center gap-y-8 w-full">
+              <figure className="flex flex-col items-center gap-y-8 w-full">
                 <img
                   className="rounded-3xl 3xl:size-[650px]"
                   src={camisaI}
@@ -41,9 +45,9 @@ const Home: React.FC = () => {
                   src={camisaIII}
                   alt="Teste 2"
                 />
-              </div>
+              </figure>
 
-              <div className="flex flex-col items-center gap-y-8 w-full md:mt-28">
+              <figure className="flex flex-col items-center gap-y-8 w-full md:mt-28">
                 <img
                   className="rounded-3xl 3xl:size-[650px]"
                   src={comemorativaMundial}
@@ -54,13 +58,13 @@ const Home: React.FC = () => {
                   src={camisaII}
                   alt="Teste 2"
                 />
-              </div>
+              </figure>
             </div>
           </div>
         </section>
 
         <section className="mt-20">
-          <div className="banner h-[400px] sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full relative">
+          <div className="banner-leisure h-[400px] sm:h-[550px] 3xl:h-[700px] 4xl:h-[900px] w-full relative">
             <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
       md:top-1/2 md:left-auto md:-right-10 lg:-right-20 md:transform md:-translate-y-1/2 w-[80%] sm:w-[60%] md:w-[30%]"
