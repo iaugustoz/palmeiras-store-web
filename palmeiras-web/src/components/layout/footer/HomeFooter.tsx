@@ -82,7 +82,7 @@ const HomeFooter = () => {
               © 2024 Palmeiras Store™ . All Rights Reserved.
             </span>
 
-            <div className="flex mt-4 sm:justify-center sm:mt-0">
+            <div className="flex mt-4 mb-8 sm:justify-center sm:my-0 sm:mb-0">
               <a
                 href="https://www.instagram.com/iaugusto__/"
                 target="_blank"
