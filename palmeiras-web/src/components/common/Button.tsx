@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 type ButtonProps = {
   classes: string;
@@ -9,23 +9,19 @@ type ButtonProps = {
   icon?: React.ElementType;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  classes,
-  classesLogo,
-  text,
-  action,
-  hasLogo,
-  icon: Icon,
-}) => {
-  return (
-    <button
-      onClick={action ? action : () => {}}
-      className={`flex justify-center items-center gap-x-3 ${classes}`}
-    >
-      {hasLogo && Icon && <Icon className={`${classesLogo}`} />}
-      {text}
-    </button>
-  );
-};
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ classes, classesLogo, text, action, hasLogo, icon: Icon }, ref) => {
+    return (
+      <button
+        onClick={action}
+        className={`flex justify-center items-center gap-x-3 ${classes}`}
+        ref={ref}
+      >
+        {hasLogo && Icon && <Icon className={`${classesLogo}`} />}
+        {text}
+      </button>
+    );
+  }
+);
 
 export default Button;

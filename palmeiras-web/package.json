@@ -25,7 +25,8 @@
     "react-router-dom": "^6.24.1",
     "swiper": "^11.1.8",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vercel": "^37.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
