@@ -1,6 +1,5 @@
 import HomeHeader from '@/components/layout/header/HomeHeader';
 import HomeFooter from '@/components/layout/footer/HomeFooter';
-import Button from '@/components/common/Button';
 import SwiperCustom from '@/components/common/SwiperCustom';
 
 import camisaI from '@/assets/images/products/camisaI.png';

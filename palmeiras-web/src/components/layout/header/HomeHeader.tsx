@@ -57,7 +57,7 @@ const HomeHeader = () => {
         <>
           <div className="fixed inset-0 backdrop-blur-lg"></div>
           <aside
-            className="fixed top-0 right-0 z-20 w-full h-full bg-white dark:bg-[#121212] p-8 sm:w-1/2 xl:w-1/3 sm:rounded-s-[40px] shadow-lg sm:shadow-black dark:sm:shadow-white dark:sm:shadow-lg"
+            className="fixed top-0 right-0 z-20 w-full h-full bg-white dark:bg-[#121212] p-8 sm:w-1/2 xl:w-1/3 sm:rounded-s-[40px] shadow-lg sm:shadow-black"
             ref={shoppingCartRef}
           >
             <div className="flex justify-between items-center">

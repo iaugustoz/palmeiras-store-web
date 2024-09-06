@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom';
 import Button from '@/components/common/Button';
 import ProductCard from '../product/ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useRef } from 'react';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Navigation } from 'swiper/modules';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { useRef } from 'react';
 
 type Product = {
   id: number;
