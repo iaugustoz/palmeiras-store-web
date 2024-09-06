@@ -9,7 +9,7 @@ import 'swiper/bundle';
 const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 if (!googleClientId) {
-  console.error('VITE_GOOGLE_CLIENT_ID is not defined in .env file');
+  console.error('VITE_GOOGLE_CLIENT_ID não está definido em .env file');
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
