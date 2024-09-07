@@ -1,16 +1,18 @@
 # Palmeiras Store
 
 <div align="center">
-<img src="src/img/site.png" width="2000px" alt="Imagem do site" title="Imagem do site"/>
+<img src="https://raw.githubusercontent.com/igoraugustobrz/palmeiras-store-web/docs/improve-readme/palmeiras-web/src/assets/images/README.md.jpg?token=GHSAT0AAAAAACSEQPID5R7WOL76Z32NLTTGZW45KMQ" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
 ## Descrição
 
-A ideia deste projeto surgiu da minha paixão pelo meu time de coração. Trata-se de um website fiel às tradições palestrinas e que simboliza o palestrino.
+Este projeto nasceu da minha paixão pelo meu time de coração, o Palmeiras. Cada detalhe deste e-commerce foi pensado para refletir às tradições palestrinas e honrar o palmeirense.
 
-A aplicação foi desenvolvida em React, TypeScript... no Front-End e no Back-End...
+Meu objetivo é criar um website que vá além do padrão. Quero simbolizar o orgulho de ser palestrino, destacando o legado de vitórias e o amor por esta camisa que tanto nos traz felicidades.
 
-Descrição em construção.
+Este repositório se trata somente do código Front-End da aplicação. Para funcionar como um todo, o repositório [palmeiras-store-api](https://github.com/igoraugustobrz/palmeiras-store-api) deve estar interligado a aplicação Front-End.
+
+Espero que você goste deste projeto. Fiz com o maior carinho possível.
 
 ## Status do projeto
 
