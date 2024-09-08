@@ -5,106 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { useRef } from 'react';
+import products from '@/data/products.json';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-type Product = {
-  id: number;
-  price: number;
-  description: string;
-  productName: string;
-  image: string;
-};
-
-const products: Product[] = [
-  {
-    id: 1,
-    price: 359.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa I 24/25 Torcedor',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-  {
-    id: 2,
-    price: 349.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa I 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-  {
-    id: 3,
-    price: 329.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa II 24/25 Torcedor',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-  {
-    id: 4,
-    price: 319.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa II 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-  {
-    id: 5,
-    price: 309.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-  {
-    id: 6,
-    price: 299.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-
-  {
-    id: 7,
-    price: 289.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-
-  {
-    id: 8,
-    price: 279.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-
-  {
-    id: 9,
-    price: 269.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-
-  {
-    id: 10,
-    price: 259.99,
-    description: 'Short description of the product.',
-    productName: 'Camisa III 24/25 Jogador',
-    image:
-      'https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000',
-  },
-];
 
 const SwiperCustom = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
