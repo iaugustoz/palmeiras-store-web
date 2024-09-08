@@ -13,12 +13,13 @@
     "productName": "Camisa II 24/25 Jogador",
     "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182833-1000-1000/_0066_777231_01.jpg?v=638434329608500000"
   },
+
   {
     "id": 3,
-    "price": 499.99,
+    "price": 199.99,
     "description": "Este produto é vendido e entregue por Palmeiras Store.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/186269-1000-1000/780962_01.jpg?v=638600398155970000"
+    "productName": "Camisa GK II Verde 2021",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/174957-1000-1000/765558-01.jpg?v=638048325736130000"
   },
   {
     "id": 4,
@@ -68,9 +69,9 @@
 
   {
     "id": 10,
-    "price": 199.99,
+    "price": 499.99,
     "description": "Este produto é vendido e entregue por Palmeiras Store.",
-    "productName": "Camisa GK II Verde 2021",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/174957-1000-1000/765558-01.jpg?v=638048325736130000"
+    "productName": "Camisa III 24/25 Jogador",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/186269-1000-1000/780962_01.jpg?v=638600398155970000"
   }
 ]
