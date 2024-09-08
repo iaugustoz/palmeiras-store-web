@@ -1,7 +1,7 @@
 # Palmeiras Store
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/igoraugustobrz/palmeiras-store-web/docs/improve-readme/palmeiras-web/src/assets/images/README.md.jpg?token=GHSAT0AAAAAACSEQPID5R7WOL76Z32NLTTGZW45KMQ" width="2000px" alt="Imagem do site" title="Imagem do site"/>
+<img src="/palmeiras-web/src/assets/images/README.md.jpg" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
 ## Descrição

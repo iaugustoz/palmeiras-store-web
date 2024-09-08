@@ -1,76 +1,76 @@
 [
   {
     "id": 1,
-    "price": 359.99,
-    "description": "Short description of the product.",
+    "price": 599.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
     "productName": "Camisa I 24/25 Torcedor",
     "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
   },
   {
     "id": 2,
-    "price": 349.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa I 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 499.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa II 24/25 Jogador",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182833-1000-1000/_0066_777231_01.jpg?v=638434329608500000"
   },
   {
     "id": 3,
-    "price": 329.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa II 24/25 Torcedor",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 499.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa III 24/25 Jogador",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/186269-1000-1000/780962_01.jpg?v=638600398155970000"
   },
   {
     "id": 4,
-    "price": 319.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa II 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 249.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa III 23/24 Torcedor",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/179576-1000-1000/774518_01.jpg?v=638285162492330000"
   },
   {
     "id": 5,
-    "price": 309.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 189.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa III 22/23 Jogador",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/174293-1000-1000/773486_01--1-.png?v=637970798557900000"
   },
   {
     "id": 6,
-    "price": 299.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 479.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa Campeão Paulista 2023 - Unissex",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/176821-1000-1000/KIT_705928-01_PAULISTA2023_PAI--2-.jpg?v=638163942526830000"
   },
 
   {
     "id": 7,
     "price": 289.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa Tricampeão Paulista 2024 - Unissex",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/184494-1000-1000/774518_01_Torcedor_Costas.jpg?v=638481284283100000"
   },
 
   {
     "id": 8,
-    "price": 279.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 249.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa Masculina Manga Longa Palmeiras 1993",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/178758-1000-1000/9923156-1.jpg?v=638213238650570000"
   },
 
   {
     "id": 9,
-    "price": 269.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 199.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa I 21/22 Torcedor",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/184307-1000-1000/768983_01.jpg?v=638460319418970000"
   },
 
   {
     "id": 10,
-    "price": 259.99,
-    "description": "Short description of the product.",
-    "productName": "Camisa III 24/25 Jogador",
-    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000"
+    "price": 199.99,
+    "description": "Este produto é vendido e entregue por Palmeiras Store.",
+    "productName": "Camisa GK II Verde 2021",
+    "image": "https://lojapalmeiras.vteximg.com.br/arquivos/ids/174957-1000-1000/765558-01.jpg?v=638048325736130000"
   }
 ]
