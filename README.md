@@ -1,96 +1,108 @@
-# Palmeiras Store
+# 🟢 **Palmeiras Store** 🟢
 
 <div align="center">
-<img src="/palmeiras-web/src/assets/images/README.md.jpg" width="2000px" alt="Imagem do site" title="Imagem do site"/>
+<img src="/palmeiras-web/src/assets/images/README.md.jpg" width="1000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
-## Descrição
+## 📜 **Descrição**
 
-Este projeto nasceu da minha paixão pelo meu time de coração, o Palmeiras. Cada detalhe deste e-commerce foi pensado para refletir às tradições palestrinas e honrar o palmeirense.
+Este projeto nasceu da minha paixão pelo Palmeiras, o time que mora no meu coração. Cada detalhe deste e-commerce foi meticulosamente pensado para honrar o legado palestrino e simbolizar o orgulho de ser palmeirense.
 
-Meu objetivo é criar um website que vá além do padrão. Quero simbolizar o orgulho de ser palestrino, destacando o legado de vitórias e o amor por esta camisa que tanto nos traz felicidades.
+Aqui, o objetivo é ir além do comum: quero refletir as tradições do clube e transmitir o amor pela camisa que tantas vezes nos enche de alegria. 🏆💚
 
-Este repositório se trata somente do código Front-End da aplicação. Para funcionar como um todo, o repositório [palmeiras-store-api](https://github.com/igoraugustobrz/palmeiras-store-api) deve estar interligado a aplicação Front-End.
+> **Nota:** Este repositório contém apenas o código Front-End da aplicação. Para ver a API que interage com o Front-End, confira o repositório [palmeiras-store-api](https://github.com/igoraugustobrz/palmeiras-store-api).
 
-Espero que você goste deste projeto. Fiz com o maior carinho possível.
+---
 
-## Status do projeto
+## 🚀 **Status do Projeto**
 
-Projeto em andamento.
+⚙️ Projeto em andamento...
 
-## Pré-requisitos
+---
 
-### Tecnologias
+## 💻 **Tecnologias Utilizadas**
 
-- React.js (v18.3.1);
-- TypeScript (v5.5.2);
-- Tailwind CSS (v3.4.4).
+- **React.js** (v18.3.1)
+- **TypeScript** (v5.5.2)
+- **Tailwind CSS** (v3.4.4)
 
-### Dependências
+---
 
-- [Lucide React](https://lucide.dev/icons/);
-- [GSAP](https://gsap.com/);
-- [Swiper](https://swiperjs.com/);
-- [Perfect Scroll](https://perfectscrollbar.com/);
-- [Google React OAuth2](https://www.npmjs.com/package/@react-oauth/google);
-- [React Apple Login](https://www.npmjs.com/package/react-apple-login).
+## 📦 **Dependências**
 
-## Instalando
+- [Lucide React](https://lucide.dev/icons/) – ícones
+- [GSAP](https://gsap.com/) – animações
+- [Swiper](https://swiperjs.com/) – sliders/carrosséis
+- [Perfect Scroll](https://perfectscrollbar.com/) – barra de rolagem customizada
+- [Google React OAuth2](https://www.npmjs.com/package/@react-oauth/google) – autenticação Google
+- [React Apple Login](https://www.npmjs.com/package/react-apple-login) – autenticação Apple
 
-1. Clone o repositório para o seu ambiente local:
+---
 
-```
-$ git clone https://github.com/igoraugustobrz/palmeiras-store
-```
+## 🔧 **Instalação**
 
-2. Navegue até o diretório do projeto.
+Siga os passos abaixo para rodar o projeto localmente:
 
-```
-$ cd palmeiras-store
-```
+1. **Clone o repositório:**
 
-3. Instale a library de ícones lucide-react
-
-```
-npm install lucide
+```bash
+git clone https://github.com/igoraugustobrz/palmeiras-store
 ```
 
-4. Instale a library de animações GSAP
+2. **Navegue até o diretório do projeto:**
 
 ```
-$ npm install gsap
+cd palmeiras-store-web
 ```
 
-## Contribuindo
+3. **Instale as dependências:**
 
-Contribuições são bem-vindas! Se você quiser contribuir para o projeto, siga as etapas abaixo:
+```
+npm install lucide gsap swiper perfect-scrollbar @react-oauth/google react-apple-login
+```
 
-1. Fork o repositório e clone-o para o seu ambiente local.
+4. **Inicie o projeto**
 
-2. Crie uma nova branch:
+```
+npm run dev
+```
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Para contribuir com este projeto, siga estas etapas:
+
+1. **Faça um fork do projeto e clone o repositório.**
+2. **Crie uma branch para suas alterações:**
 
 ```
 git checkout -b minha-contribuicao
 ```
 
-3. Faça as alterações desejadas e commit-as:
+3. **Implemente suas mudanças e faça o commit:**
 
 ```
 git commit -m "Minha contribuição"
 ```
 
-4. Envie suas alterações para o repositório remoto:
+4. **Envie suas alterações para o repositório remoto:**
 
 ```
 git push origin minha-contribuicao
 ```
 
-5. Abra uma solicitação de pull no repositório original.
+---
 
-## Autor
+## 👨‍💻 Autor
 
 - Igor Augusto
-- E-mail: igoraugustobz@gmail.com
-- Me siga no [Instagram](https://www.instagram.com/iaugusto__/)
-- Acesse o meu [Portfólio](https://iaugusto.vercel.app/)
-- Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igorbrz/)
+- 📧 E-mail: igoraugustobz@gmail.com
+- [Instagram](https://www.instagram.com/iaugusto__/) | [Portfólio](https://iaugusto.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/igorbrz/)
+
+
+---
+
+## ⚠️ Aviso Importante
+
+Este projeto ainda está em desenvolvimento, portanto, algumas funcionalidades podem estar incompletas ou sujeitas a alterações. Se você encontrar algum bug, não hesite em abrir uma issue!
