@@ -1,4 +1,4 @@
-# 🟢 **Palmeiras Store** 🟢
+# 🟢 **Palmeiras Store Web** 🟢
 
 <div align="center">
 <img src="/palmeiras-web/src/assets/images/README.md.jpg" width="1000px" alt="Imagem do site" title="Imagem do site"/>
